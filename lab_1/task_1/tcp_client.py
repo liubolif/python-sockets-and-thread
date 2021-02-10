@@ -1,7 +1,7 @@
 import socket
 from datetime import datetime
 
-address = ('localhost', 44442)
+address = ('localhost', 44449)
 max_size = 1024
 
 print('Starting the CLIENT at', datetime.now())

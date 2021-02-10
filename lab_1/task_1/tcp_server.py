@@ -2,10 +2,12 @@ import socket
 from datetime import datetime
 import time
 
-address = ('localhost', 44442)
+address = ('localhost', 44449)
 max_size = 1024
 
+
 server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+server.setblocking(False)
 server.bind(address)
 print('Starting the SERVER at', datetime.now())
 
