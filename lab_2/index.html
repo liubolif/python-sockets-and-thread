@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Processing form's data</title>
+    </head>
+    <body>
+        <form action="/cgi-bin/form.py" method="post">
+            <h3>To order pizza, fill the fields:</h3>
+
+            <b>Enter your contact data:</b><br>
+            <b>Name:</b>    <input type="text" name="name">
+            <b>Delivery address:</b> <input type="text" name="address">
+            <br><br>
+
+            <b>Choose pizza ingredients:</b><br>
+            <input type="checkbox" name="ingredient" value="cheese"/> cheese <br>
+            <input type="checkbox" name="ingredient" value="sausage"/> sausage <br>
+            <input type="checkbox" name="ingredient" value="ham"/> ham <br>
+            <input type="checkbox" name="ingredient" value="tomatoes"/> tomatoes <br>
+            <input type="checkbox" name="ingredient" value="peppers"/> peppers <br>
+            <input type="checkbox" name="ingredient" value="mushrooms"/> mushrooms <br>
+            <input type="checkbox" name="ingredient" value="olives"/> olives <br>
+            <input type="checkbox" name="ingredient" value="corn"/> corn <br>
+            <input type="checkbox" name="ingredient" value="onions"/> onions <br>
+            <br><br>
+
+            <b>Choose size of pizza:</b><br>
+            <input type="radio" name="size" value="small"/> small (15 сm)
+            <input type="radio" name="size" value="medium"/> medium (30 cm)
+            <input type="radio" name="size" value="large"/> large (45 cm)
+
+            <br><br><input type="submit" value="Submit">
+        </form>
+    </body>
+</html>
