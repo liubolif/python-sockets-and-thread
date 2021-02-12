@@ -17,8 +17,8 @@ clientsocket, addr = server.accept()
 print('Got a connection from client: {}'.format(addr))
 
 received_data = clientsocket.recv(max_size)
-time.sleep(1)
 print('\tAt: {} \n\tclient: {}\n\tsaid: {}\n'.format(datetime.now(), addr, received_data.decode('utf-8')))
+time.sleep(5)
 send_echo = clientsocket.sendall(received_data)
 print(send_echo, len(received_data))
 if send_echo == len(received_data):  # перевірка, чи всі дані були надіслані
