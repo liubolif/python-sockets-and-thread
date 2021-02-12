@@ -9,6 +9,7 @@ print('Starting the CLIENT at', datetime.now())
 client = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
 client.connect(address)
+client.setblocking(True)
 
 print('Enter:\n\t\'q\' - to exit from client'
       '\n\t\'qq\' - to shut down the server and client as well')
